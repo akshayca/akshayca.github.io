@@ -15,5 +15,5 @@ $(document).ready(function () {
 });
 
 function blink() {
-	$('.ter').delay(300).fadeTo(200, 0.5).delay(200).fadeTo(200, 1, blink);
+	$('.ter').delay(600).fadeTo(200, 0.5).delay(600).fadeTo(300, 1, blink);
 }
