@@ -140,8 +140,7 @@ img
   margin: 0;
   color: white;
   position: center;
-  background: url('https://i.ibb.co/qYFM1sY/final6.jpg');
-  /* background: url('http://wallpapercave.com/wp/chyFcK4.jpg'); */
+  background: url('/images/final6.jpg');
   background-repeat: no-repeat;
   /* background-size: cover; */
 
@@ -257,6 +256,7 @@ h5 {
 h6 {
   font-size: 25px;
 }
+
 
 .logo {
   color: #ffffff;
@@ -411,7 +411,7 @@ a:hover {
 	border-radius: 5px;
 }
 .timeline-content h3{
-    font-size: 20px;
+    font-size: 25px;
 	color: #ffffff;
 	margin:0 0 10px;
 	text-transform: capitalize;
@@ -419,9 +419,9 @@ a:hover {
 }
 .timeline-content p{
     color: #c8c8c8;
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: 300;
-	line-height: 22px;
+	line-height: 30px;
 }
 .ss{
   padding-top: 10%;
@@ -432,7 +432,7 @@ a:hover {
 }
 
 .desc{
-  font-size: 15pt;
+  font-size: 20pt;
 }
 
 .smallp{
