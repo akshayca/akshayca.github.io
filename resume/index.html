@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Akshay C A</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+            --accent: #2563eb;
+            --border: #e5e7eb;
+            --bg-body: #f3f4f6;
+            --bg-paper: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-main);
+            line-height: 1.5;
+            background-color: var(--bg-body);
+            margin: 0;
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .resume-paper {
+            background: var(--bg-paper);
+            padding: 3rem;
+            /* Standard 1 inch margins approx */
+            width: 100%;
+            max-width: 8.5in;
+            /* US Letter width */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            margin-bottom: 2rem;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* Header */
+        header {
+            border-bottom: 2px solid var(--text-main);
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .name-role h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.05rem;
+            color: #111827;
+        }
+
+        .name-role .role {
+            margin-top: 0.25rem;
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .contact-info {
+            text-align: right;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .contact-info div {
+            margin-bottom: 0.2rem;
+        }
+
+        .contact-info a:hover {
+            color: var(--accent);
+            text-decoration: underline;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            font-weight: 700;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin: 0 0 1rem 0;
+        }
+
+        /* Experience Items */
+        .exp-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.5rem;
+        }
+
+        .company-role {
+            font-size: 1rem;
+        }
+
+        .company {
+            font-weight: 700;
+            color: #111827;
+        }
+
+        .job-title {
+            font-weight: 500;
+            color: var(--text-main);
+        }
+
+        .date {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-variant-numeric: tabular-nums;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 1.2rem;
+        }
+
+        li {
+            margin-bottom: 0.35rem;
+            font-size: 0.95rem;
+            color: #374151;
+        }
+
+        /* Skills Grid */
+        .skills-section {
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            gap: 0.75rem;
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .skill-category {
+            font-weight: 600;
+            color: #111827;
+        }
+
+        .skill-list {
+            color: #374151;
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .resume-paper {
+                box-shadow: none;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                max-width: none;
+            }
+
+            .no-print {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="resume-paper">
+        <header>
+            <div class="name-role">
+                <h1>Akshay C A</h1>
+                <div class="role">Software Development Engineer II</div>
+            </div>
+            <div class="contact-info">
+                <div>Bengaluru, India</div>
+                <div><a href="mailto:akshay.ca42@gmail.com">akshay.ca42@gmail.com</a></div>
+                <div><a href="https://in.linkedin.com/in/akshayca">linkedin.com/in/akshayca</a></div>
+                <div><a href="https://akshayca.github.io">akshayca.github.io</a></div>
+            </div>
+        </header>
+
+        <section>
+            <h2>Professional Summary</h2>
+            <p>Results-driven Software Development Engineer with over 6 years of experience in designing and building
+                scalable distributed systems. Currently an SDE at Amazon, specializing in cloud-native microservices,
+                serverless architectures, and full-stack development. Proven track record of migrating legacy monoliths
+                to modern AWS infrastructure, optimizing API latency, and driving operational excellence.</p>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-section">
+                <div class="skill-category">Languages</div>
+                <div class="skill-list">Java, TypeScript, Python, SQL, C#</div>
+            </div>
+            <div class="skills-section">
+                <div class="skill-category">Cloud / DevOps</div>
+                <div class="skill-list">AWS (Lambda, DynamoDB, EC2, EKS), Docker, Kubernetes, Terraform</div>
+            </div>
+            <div class="skills-section">
+                <div class="skill-category">Backend</div>
+                <div class="skill-list">Spring Boot, Node.js, Microservices, REST, GraphQL</div>
+            </div>
+            <div class="skills-section">
+                <div class="skill-category">Frontend</div>
+                <div class="skill-list">React.js, Next.js, HTML5, CSS3, Tailwind</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Experience</h2>
+
+            <div class="exp-item">
+                <div class="exp-header">
+                    <div class="company-role">
+                        <span class="company">Amazon</span> |
+                        <span class="job-title">Software Development Engineer II</span>
+                    </div>
+                    <span class="date">Jun 2022 – Present</span>
+                </div>
+                <ul>
+                    <li>Designed and implemented scalable microservices using <strong>Java (Spring Boot)</strong> and
+                        <strong>AWS Lambda</strong>, handling high-throughput traffic and reducing infrastructure costs
+                        by 15%.</li>
+                    <li>Led the migration of a legacy monolithic application to a serverless architecture, improving
+                        system availablity to <strong>99.99%</strong>.</li>
+                    <li>Optimized high-latency APIs by implementing caching strategies (Redis) and asynchronous
+                        processing with AWS SQS, cutting P99 latency by <strong>40%</strong>.</li>
+                    <li>Developed responsive operational dashboards using <strong>React</strong> and
+                        <strong>TypeScript</strong> for real-time system monitoring.</li>
+                    <li>Established robust CI/CD pipelines using CDK, automating deployments and reducing time-to-market
+                        by 50%.</li>
+                </ul>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-header">
+                    <div class="company-role">
+                        <span class="company">Siemens Healthineers</span> |
+                        <span class="job-title">Test Professional (SDET)</span>
+                    </div>
+                    <span class="date">2021 – 2022</span>
+                </div>
+                <ul>
+                    <li>Developed automated testing frameworks for healthcare software using <strong>C#</strong> and
+                        <strong>Selenium</strong>, ensuring compliance with strict medical standards.</li>
+                    <li>Created comprehensive test reporting dashboards using the <strong>MERN stack</strong>, providing
+                        real-time visibility into test execution across teams.</li>
+                    <li>Optimized regression testing cycles by implementing parallel execution strategies, reducing
+                        feedback time by 60%.</li>
+                </ul>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-header">
+                    <div class="company-role">
+                        <span class="company">Dassault Systèmes</span> |
+                        <span class="job-title">QA Engineer</span>
+                    </div>
+                    <span class="date">2020 – 2021</span>
+                </div>
+                <ul>
+                    <li>Designed and maintained automation scripts for web and mobile applications using
+                        <strong>Java</strong>, Appium, and TestNG.</li>
+                    <li>Integrated automated tests into Jenkins CI/CD pipelines to catch critical bugs early in the
+                        release cycle.</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="exp-header">
+                <div class="company-role">
+                    <span class="company">PES Institute of Technology</span> |
+                    <span class="job-title">B.E. Information Science</span>
+                </div>
+                <span class="date">2013 – 2017</span>
+            </div>
+        </section>
+
+        <div class="no-print" style="margin-top: 2rem; display: flex; justify-content: center; gap: 1rem;">
+            <button onclick="window.print()"
+                style="padding: 0.75rem 1.5rem; background-color: #2563eb; color: white; border: none; border-radius: 6px; font-weight: 600; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                Download PDF
+            </button>
+            <a href="../index.html"
+                style="padding: 0.75rem 1.5rem; background-color: #e5e7eb; color: #374151; border: none; border-radius: 6px; font-weight: 600; cursor: pointer; text-decoration: none;">
+                Back to Portfolio
+            </a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
